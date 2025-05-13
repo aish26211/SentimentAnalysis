@@ -1,0 +1,20 @@
+// Experiment Workflow
+digraph {
+	A [label="Data Collection
+Gather Twitter and Amazon review data"]
+	B [label="Data Preprocessing
+Clean text data (tokenization, stopword removal, etc.)"]
+	C [label="Feature Engineering
+Convert text to numerical representations using TF-IDF"]
+	D [label="Model Training
+Train the SVM model on the processed data"]
+	E [label="Sentiment Prediction
+Classify new reviews using the trained model"]
+	F [label="Visualization
+Create graphs and charts to present findings and model performance"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}
